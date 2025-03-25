@@ -1993,7 +1993,7 @@ class Shell {
 		}
 
 		if (!this.disableWordd && store.state.config.wordShell) {
-			if (Math.random() < 0.4) {  // 提高文字烟花的出现概率
+			if (Math.random() < 0.25) {  // 提高文字烟花的出现概率
 				createWordBurst(randomWord(), dotStarFactory, x, y);
 			}
 		}
