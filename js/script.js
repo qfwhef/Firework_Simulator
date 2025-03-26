@@ -76,7 +76,7 @@ const mainStage = new Stage("main-canvas");
 const stages = [trailsStage, mainStage];
 
 //随机文字烟花内容
-const randomWords = ["hi~","哈喽","天天开心","心想事成","万事如意","运气upup"];
+const randomWords = ["hi~","哈喽","天天开心","万事如意","好运常在","美梦成真","大吉大利",""];
 let fireworkCounter = 0; // 添加计数器
 const wordDotsMap = {};
 randomWords.forEach((word) => {
@@ -1993,7 +1993,7 @@ class Shell {
 		}
 
 		if (!this.disableWordd && store.state.config.wordShell) {
-			if (Math.random() < 0.25) {  // 提高文字烟花的出现概率
+			if (Math.random() < 0.18) {  // 提高文字烟花的出现概率
 				createWordBurst(randomWord(), dotStarFactory, x, y);
 			}
 		}
